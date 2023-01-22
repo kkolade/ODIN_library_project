@@ -13,7 +13,7 @@ function Book(title, author, pages, isRead){
 }
 
 Book.prototype.info = function (){
-  return `<h3>${this.title}</h3> <span>by</span> <p> ${this.author}</p>  <p>${this.pages} pages</p> <p> ${this.isRead ? 'Read':'Not read yet'}</p>`;
+  return `<h3>${this.title}</h3> <span>by</span> <p> ${this.author}</p>  <p>${this.pages} pages</p> <button class'toggle'> ${this.isRead ? 'Read':'Not read yet'}</button>`;
 }
 
 const displayBook = (books) => {
