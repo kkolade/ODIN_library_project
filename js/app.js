@@ -58,6 +58,11 @@ const displayForm = () => {
 addBookForm.classList.remove('hidden');
 }
 
+const removeBook = (e) => {
+  if(e.target.className = 'remove-book'){
+    e.target.parentElement.remove()
+  }
+}
 
 
 // Event Listeners
@@ -65,4 +70,6 @@ addBookForm.classList.remove('hidden');
 addNewBook.addEventListener('click', displayForm)
 
 addBookBtn.addEventListener('click', addBookToLibrary)
+
+bookShelf.addEventListener('click', removeBook)
 
